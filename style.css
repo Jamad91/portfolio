@@ -1,18 +1,22 @@
 * {
+  --nav-green: #2a9712;
+  --main-blue: #d6e8f0;
+
   margin: 0;
   padding: 0;
+  /*background-color: var(--main-blue);*/
 }
 
 #columns {
   display: inline-block;
   height: 100%;
   width: 100%;
-  background-color: #d6e8f0
+  background-color: #d6e8f0;
 }
 
 #navbar {
   display: inline-block;
-  background-color: #2a9712;
+  background-color: var(--nav-green);
   width: 30%;
   height: inherit;
   position: fixed;
@@ -26,11 +30,30 @@
   display: inline;
 }
 
+.contact-link{
+  max-height: 4%;
+  padding-right: 2%;
+}
+
 #content {
   width: 60%;
   display: block;
   float: right;
   scroll-behavior: smooth;
+}
+
+.inactive {
+  display: none;
+}
+
+#skills {
+  height: 100vh;
+}
+
+#skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  grid-gap: 10px;
 }
 
 .entry{

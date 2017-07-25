@@ -1,10 +1,19 @@
-(function() {
-  const navbar = document.querySelector('#navbar');
-  let topOfNav = navbar.offsetTop;
+$(document).ready(function() {
+    var projects = $('#projects')
+    var skills = $('#skills')
 
-  window.scroll({
-    behavior: 'smooth'
-  })
+    function inactiveSwap() {
+      projects.toggleClass('inactive')
+      skills.toggleClass('inactive')
+    }
 
-  console.log(navbar);
-})();
+    $('.nav-arrow').click(()=>{
+      inactiveSwap();
+    })
+
+    $(document).keydown((e)=>{
+      if (e.keyCode === 37 || e.keyCode ===39){
+        inactiveSwap();
+      }
+    })
+});
