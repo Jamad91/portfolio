@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#columns {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: #d6e8f0
+}
+
+#navbar {
+  display: inline-block;
+  background-color: #2a9712;
+  width: 30%;
+  height: inherit;
+  position: fixed;
+}
+
+#self-portrait {
+  border-radius: 50%;
+}
+
+#contact{
+  display: inline;
+}
+
+#content {
+  width: 60%;
+  display: block;
+  float: right;
+  scroll-behavior: smooth;
+}
+
+.entry{
+  padding-bottom: 5%;
+}
+
+#starship-pic > img{
+  max-width: 70%;
+}
+
+#sophie-pic > img {
+  max-width: 70%;
+}
