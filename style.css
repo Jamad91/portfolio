@@ -4,14 +4,14 @@
 
   margin: 0;
   padding: 0;
-  /*background-color: var(--main-blue);*/
 }
 
 #columns {
-  display: inline-block;
+  /*display: inline-block;*/
   height: 100%;
   width: 100%;
-  background-color: #d6e8f0;
+  /*background-color: #d6e8f0;*/
+  background-color: var(--main-blue);
 }
 
 #navbar {
@@ -37,9 +37,22 @@
 
 #content {
   width: 60%;
-  display: block;
+  display: inline-block;
   float: right;
-  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+#tabs h1 {
+  color: gray;
+}
+
+#tabs h1 {
+  display: inline;
+  padding-right: 2%;
+}
+
+#tabs > .active-tab {
+  color: black;
 }
 
 .inactive {
@@ -57,7 +70,7 @@
 }
 
 .entry{
-  padding-bottom: 5%;
+  /*padding-bottom: 5%;*/
 }
 
 #starship-pic > img{

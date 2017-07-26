@@ -1,19 +1,27 @@
 $(document).ready(function() {
-    var projects = $('#projects')
-    var skills = $('#skills')
+    var tabs = $('#tabs').children()
+    var activeTab = $('.active-tab')
+    var viewSections = $('.view-section')
 
-    function inactiveSwap() {
-      projects.toggleClass('inactive')
-      skills.toggleClass('inactive')
-    }
+    tabs.each((idx) => {
+      var selected = $(tabs[idx])
 
-    $('.nav-arrow').click(()=>{
-      inactiveSwap();
+      $(tabs[idx]).click(()=>{
+        $(tabs).removeClass('active-tab');
+        $(selected).addClass('active-tab');
+
+        var sectionName = $(selected).attr('id').split('-')[0];
+        $(viewSections).addClass('inactive');
+        // console.log($(`.${sectionName}`));
+        $(`#${sectionName}`).removeClass('inactive');
+
+      })
+
     })
 
-    $(document).keydown((e)=>{
-      if (e.keyCode === 37 || e.keyCode ===39){
-        inactiveSwap();
-      }
-    })
+    // $(document).keydown((e)=>{
+    //   if (e.keyCode === 37 || e.keyCode ===39){
+    //     inactiveSwap();
+    //   }
+    // })
 });
