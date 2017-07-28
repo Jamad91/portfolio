@@ -1,5 +1,9 @@
 #about {
-  font-size: 100%;
+  font-size: 90%;
+}
+
+.contact-link > a > img {
+  width: 80%;
 }
 
 #projects h2 {
@@ -8,11 +12,11 @@
 
 .entry > span {
   margin: -4% 0 0 15%;
-  font-size: 100%;
+  font-size: 90%;
 }
 
 .project-links {
-  margin-top: 20%;
+  margin-top: 18%;
 }
 
 #skills h2 {
