@@ -7,15 +7,14 @@
 }
 
 #columns {
-  /*display: inline-block;*/
+  display: inline-block;
   height: 100%;
   width: 100%;
-  /*background-color: #d6e8f0;*/
   background-color: var(--main-blue);
 }
 
 #navbar {
-  display: inline-block;
+  /*display: inline-block;*/
   background-color: var(--nav-green);
   width: 30%;
   height: inherit;
@@ -27,26 +26,39 @@
 }
 
 #contact{
-  display: inline;
+  display: inline-block;
+  width: 100%;
 }
 
 .contact-link{
-  max-height: 4%;
-  padding-right: 2%;
+  display: inline-block;
+}
+
+.contact-link :hover {
+  opacity: 0.75;
+}
+
+.clicked {
+  opacity: 0.6;
+}
+
+#github-link{
+  border-radius: 50%;
+  overflow:hidden;
 }
 
 #content {
+  margin-left: 33%;
   width: 60%;
   display: inline-block;
-  float: right;
   height: 100vh;
+}
+#tabs{
+  padding-bottom: 30px;
 }
 
 #tabs h1 {
   color: gray;
-}
-
-#tabs h1 {
   display: inline;
   padding-right: 2%;
 }
@@ -59,24 +71,42 @@
   display: none;
 }
 
+#projects h2 {
+  padding-bottom: 20px;
+}
+
+.entry {
+  display: inline-block;
+  border: solid black 1px;
+  background-color: gray;
+  box-shadow: 4px 4px 5px 0px;
+  margin-bottom: 5%;
+}
+
+.entry > img {
+  margin-bottom: -0.5%;
+  max-width: 50%;
+}
+
+.entry > span {
+  position: absolute;
+  max-width: 28%;
+  display: inline;
+  margin-left: 1%;
+  /*border: solid blue 2px;*/
+  /*height: 100%;*/
+}
+
 #skills {
   height: 100vh;
+}
+
+#skills h2 {
+  padding-bottom: 20px;
 }
 
 #skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 25%);
   grid-gap: 10px;
-}
-
-.entry{
-  /*padding-bottom: 5%;*/
-}
-
-#starship-pic > img{
-  max-width: 70%;
-}
-
-#sophie-pic > img {
-  max-width: 70%;
 }

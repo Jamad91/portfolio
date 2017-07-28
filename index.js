@@ -3,7 +3,7 @@ $(document).ready(function() {
     var activeTab = $('.active-tab')
     var viewSections = $('.view-section')
 
-    tabs.each((idx) => {
+    tabs.each(idx => {
       var selected = $(tabs[idx])
 
       $(tabs[idx]).click(()=>{
@@ -12,16 +12,20 @@ $(document).ready(function() {
 
         var sectionName = $(selected).attr('id').split('-')[0];
         $(viewSections).addClass('inactive');
-        // console.log($(`.${sectionName}`));
         $(`#${sectionName}`).removeClass('inactive');
 
       })
-
     })
 
-    // $(document).keydown((e)=>{
-    //   if (e.keyCode === 37 || e.keyCode ===39){
-    //     inactiveSwap();
-    //   }
-    // })
+    var contactLinks = $('.contact-link')
+    contactLinks.each(idx => {
+      var link = contactLinks[idx]
+      $(link).on('mousedown', () => {
+        $(link).addClass('clicked')
+      })
+      $(link).on('mouseup', () => {
+        $(link).removeClass('clicked')
+      })
+    })
+
 });
