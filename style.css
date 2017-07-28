@@ -135,7 +135,7 @@ span > div:hover {
 }
 
 #skills {
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 #skills h2 {
@@ -144,6 +144,10 @@ span > div:hover {
 
 #skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 25%);
+  grid-template-columns: repeat(4, 25%);
   grid-gap: 10px;
 }
+
+/*#skills-grid > img {
+  width: 80%;
+}*/
