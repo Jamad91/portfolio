@@ -4,6 +4,7 @@
 
   margin: 0;
   padding: 0;
+  /*background-color: var(--main-blue);*/
 }
 
 #columns {
@@ -19,6 +20,10 @@
   width: 30%;
   height: inherit;
   position: fixed;
+}
+
+#navbar > * {
+  background-color: var(--nav-green);
 }
 
 #self-portrait {
@@ -53,6 +58,7 @@
   display: inline-block;
   height: 100vh;
 }
+
 #tabs{
   padding-bottom: 30px;
 }
@@ -76,25 +82,45 @@
 }
 
 .entry {
-  display: inline-block;
   border: solid black 1px;
   background-color: gray;
   box-shadow: 4px 4px 5px 0px;
-  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .entry > img {
-  margin-bottom: -0.5%;
   max-width: 50%;
+  margin-left: -50%;
 }
 
 .entry > span {
   position: absolute;
   max-width: 28%;
-  display: inline;
-  margin-left: 1%;
-  /*border: solid blue 2px;*/
-  /*height: 100%;*/
+  display: inline-block;
+  margin: -3% 0 0 15%;
+  font-size: 125%;
+}
+
+span > div {
+  position: absolute;
+  margin-top: 15%;
+  /*background-color: orange;*/
+  background: linear-gradient(0deg, #0041fd, #5CB5E0);
+  border-radius: 38%;
+  padding: 1% 2% 1% 2%;
+  font-size: 80%;
+  border: 1px solid black;
+  box-shadow: 0px 1px 1px 1px;
+}
+
+span > div:hover {
+  box-shadow: 0px 3px 1px 1px;
+}
+
+#starship-entry {
+  margin-bottom: 5%;
 }
 
 #skills {
