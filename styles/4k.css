@@ -15,7 +15,6 @@
 }
 
 #navbar {
-  /*display: inline-block;*/
   background-color: var(--nav-green);
   width: 30%;
   height: inherit;
@@ -34,10 +33,10 @@
 
 #about {
   margin: 7% 7% 5% 7%;
+  font-size: 150%;
 }
 
 #contact{
-  /*border: solid green 1px;*/
   display: inline;
   margin-left: 7%;
 }
@@ -46,10 +45,6 @@
   display: inline-block;
   opacity: 0.85;
   margin-right: 3%;
-}
-
-.contact-link > a > img{
-  /*border: solid red 1px;*/
 }
 
 .contact-hover {
@@ -91,6 +86,7 @@
 
 #projects h2 {
   padding-bottom: 20px;
+  font-size: 200%;
 }
 
 .entry {
@@ -111,14 +107,14 @@
   position: absolute;
   max-width: 28%;
   display: block;
-  margin: -3% 0 0 15%;
-  font-size: 125%;
+  margin: -5% 0 0 15%;
+  font-size: 160%;
 }
 
 .project-links {
   position: absolute;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 25%;
 }
 
 .project-links > div {

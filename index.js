@@ -33,7 +33,6 @@ $(document).ready(function() {
     })
 
     var projectLinks = $('.project-links').children()
-    console.log(projectLinks);
     projectLinks.each(idx => {
       var link = projectLinks[idx]
       $(link).on('mouseover', () => {
@@ -41,7 +40,6 @@ $(document).ready(function() {
       })
       $(link).on('mousedown', () => {
         $(link).addClass('project-clicked')
-        console.log(link);
       })
       $(link).on('mouseleave' || 'mouseup', () => {
         $(link).removeClass('project-hover')
