@@ -30,7 +30,23 @@ $(document).ready(function() {
         $(link).removeClass('contact-hover')
         $(link).removeClass('contact-clicked')
       })
+    })
 
+    var projectLinks = $('.project-links').children()
+    console.log(projectLinks);
+    projectLinks.each(idx => {
+      var link = projectLinks[idx]
+      $(link).on('mouseover', () => {
+        $(link).addClass('project-hover')
+      })
+      $(link).on('mousedown', () => {
+        $(link).addClass('project-clicked')
+        console.log(link);
+      })
+      $(link).on('mouseleave' || 'mouseup', () => {
+        $(link).removeClass('project-hover')
+        $(link).removeClass('project-clicked')
+      })
     })
 
 });
