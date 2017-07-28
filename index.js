@@ -20,12 +20,17 @@ $(document).ready(function() {
     var contactLinks = $('.contact-link')
     contactLinks.each(idx => {
       var link = contactLinks[idx]
+      $(link).on('mouseover', () => {
+        $(link).addClass('contact-hover')
+      })
       $(link).on('mousedown', () => {
-        $(link).addClass('clicked')
+        $(link).addClass('contact-clicked')
       })
-      $(link).on('mouseup', () => {
-        $(link).removeClass('clicked')
+      $(link).on('mouseleave' || 'mouseup', () => {
+        $(link).removeClass('contact-hover')
+        $(link).removeClass('contact-clicked')
       })
+
     })
 
 });
